@@ -27,9 +27,13 @@ opentelemetry-bootstrap -a install
 ## Run
 
 ```
-python3 server.py
+export LS_ACCESS_TOKEN=my-access-token-etc
+export LS_SERVICE_NAME=hello-server
+opentelemetry-instrument python3 server.py
 ```
 
 ```
-python3 client.py
+export LS_ACCESS_TOKEN=my-access-token-etc
+export LS_SERVICE_NAME=hello-client
+opentelemetry-instrument python3 client.py
 ```
