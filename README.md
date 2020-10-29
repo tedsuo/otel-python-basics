@@ -18,6 +18,7 @@ export LS_ACCESS_TOKEN=my-access-token-etc
 ## Installation
 ```
 python3 -m venv .
+source bin/activate
 pip3 install opentelemetry-launcher
 pip3 install requests
 pip3 install flask
