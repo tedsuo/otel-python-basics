@@ -17,7 +17,7 @@ export LS_ACCESS_TOKEN=my-access-token-etc
 
 ## Installation
 ```
-git clone git@github.com:tedsuo/otel-python-basics.git
+git clone https://github.com/tedsuo/otel-python-basics.git
 mkdir new_virtual_environment
 virtualenv new_virtual_environment
 source new_virtual_environment/bin/activate
