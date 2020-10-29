@@ -3,11 +3,20 @@
 from flask import Flask
 from opentelemetry import trace, baggage
 from time import sleep
+from opentelemetry.launcher import configure_opentelemetry
 
 PORT = 8000
 
 app = Flask(__name__)
 tracer = trace.get_tracer(__name__)
+
+configure_opentelemetry(
+    service_name="server-456",
+    service_version="4.5.6",
+    log_level="DEBUG",  # optional
+    propagators="baggage,tracecontext",
+)
+
 
 @app.route("/hello")
 def hello():
