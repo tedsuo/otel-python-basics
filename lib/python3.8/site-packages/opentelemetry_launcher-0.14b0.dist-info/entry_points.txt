@@ -1,0 +1,3 @@
+[opentelemetry_instrumentor]
+lightstep_launcher = opentelemetry.launcher.configuration:LightstepLauncherInstrumentor
+

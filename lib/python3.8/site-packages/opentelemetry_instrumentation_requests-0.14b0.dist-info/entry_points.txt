@@ -1,0 +1,3 @@
+[opentelemetry_instrumentor]
+requests = opentelemetry.instrumentation.requests:RequestsInstrumentor
+

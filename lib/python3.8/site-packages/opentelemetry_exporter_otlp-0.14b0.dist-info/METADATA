@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: opentelemetry-exporter-otlp
+Version: 0.14b0
+Summary: OpenTelemetry Collector Exporter
+Home-page: https://github.com/open-telemetry/opentelemetry-python/tree/master/exporter/opentelemetry-exporter-otlp
+Author: OpenTelemetry Authors
+Author-email: cncf-opentelemetry-contributors@lists.cncf.io
+License: Apache-2.0
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Requires-Dist: grpcio (<2.0.0,>=1.0.0)
+Requires-Dist: googleapis-common-protos (~=1.52.0)
+Requires-Dist: opentelemetry-api (==0.14b0)
+Requires-Dist: opentelemetry-sdk (==0.14b0)
+Requires-Dist: opentelemetry-proto (==0.14b0)
+Requires-Dist: backoff (~=1.10.0)
+Provides-Extra: test
+Requires-Dist: pytest-grpc ; extra == 'test'
+
+OpenTelemetry Collector Exporter
+================================
+
+|pypi|
+
+.. |pypi| image:: https://badge.fury.io/py/opentelemetry-exporter-otlp.svg
+   :target: https://pypi.org/project/opentelemetry-exporter-otlp/
+
+This library allows to export data to the OpenTelemetry Collector using the OpenTelemetry Protocol.
+
+Installation
+------------
+
+::
+
+     pip install opentelemetry-exporter-otlp
+
+
+References
+----------
+
+* `OpenTelemetry Collector Exporter <https://opentelemetry-python.readthedocs.io/en/latest/exporter/otlp/otlp.html>`_
+* `OpenTelemetry Collector <https://github.com/open-telemetry/opentelemetry-collector/>`_
+* `OpenTelemetry <https://opentelemetry.io/>`_
+* `OpenTelemetry Protocol Specification <https://github.com/open-telemetry/oteps/blob/master/text/0035-opentelemetry-protocol.md>`_
+
+

@@ -1,0 +1,4 @@
+[opentelemetry_instrumentor]
+grpc_client = opentelemetry.instrumentation.grpc:GrpcInstrumentorClient
+grpc_server = opentelemetry.instrumentation.grpc:GrpcInstrumentorServer
+

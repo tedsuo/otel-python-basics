@@ -1,0 +1,3 @@
+[opentelemetry_instrumentor]
+jinja2 = opentelemetry.instrumentation.jinja2:Jinja2Instrumentor
+
