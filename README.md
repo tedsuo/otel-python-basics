@@ -17,12 +17,11 @@ export LS_ACCESS_TOKEN=my-access-token-etc
 
 ## Installation
 ```
-python3 -m venv .
-source bin/activate
-pip3 install opentelemetry-launcher
-pip3 install requests
-pip3 install flask
-opentelemetry-bootstrap -a install
+git clone git@github.com:tedsuo/otel-python-basics.git
+mkdir new_virtual_environment
+virtualenv new_virtual_environment
+source new_virtual_environment/bin/activate
+pip install -r otel-python-basics/requirements.txt
 ```
 
 ## Run
@@ -30,11 +29,13 @@ opentelemetry-bootstrap -a install
 ```
 export LS_ACCESS_TOKEN=my-access-token-etc
 export LS_SERVICE_NAME=hello-server
+export OTEL_PYTHON_TRACER_PROVIDER=sdk_tracer_provider
 opentelemetry-instrument python3 server.py
 ```
 
 ```
 export LS_ACCESS_TOKEN=my-access-token-etc
 export LS_SERVICE_NAME=hello-client
+export OTEL_PYTHON_TRACER_PROVIDER=sdk_tracer_provider
 opentelemetry-instrument python3 client.py
 ```
