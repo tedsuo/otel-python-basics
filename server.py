@@ -42,7 +42,11 @@ def hello():
         sleep(30 / 1000)
 
         # record an exception
-        # 1 / 0
+        try:
+            1 / 0
+        except ZeroDivisionError as error:
+            span.record_exception(error)
+            print("caught zero division error")
 
         return "hello"
 
