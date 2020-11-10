@@ -11,7 +11,6 @@ app = Flask(__name__)
 tracer = trace.get_tracer(__name__)
 
 configure_opentelemetry(
-    service_name="server-456",
     service_version="4.5.6",
     log_level="DEBUG",  # optional
     propagators="baggage,tracecontext",
