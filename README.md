@@ -4,7 +4,7 @@ Just a basic client/server for playing with OpenTelemetry in Python.
 
 Handy links:
 
-* Free Lightstep Developer Account: https://bit.ly/otel-workshop
+* [Free Lightstep Developer Account](https://app.lightstep.com/signup/developer?signup_source=typythonbasics)
 * OTel Python Launcher: https://github.com/lightstep/otel-launcher-python/
 * Quickstart Guide: https://opentelemetry.lightstep.com/python
 * OpenTelemetry Python: https://github.com/open-telemetry/opentelemetry-python
