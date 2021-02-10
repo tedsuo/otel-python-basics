@@ -1,5 +1,5 @@
 Flask==1.1.2
-opentelemetry-instrumentation-flask==0.15b0
-opentelemetry-instrumentation-requests==0.15b0
-opentelemetry-launcher==0.15b0
+opentelemetry-instrumentation-flask==0.17b0
+opentelemetry-instrumentation-requests==0.17b0
+opentelemetry-launcher==0.17b0
 requests==2.24.0

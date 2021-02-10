@@ -21,7 +21,7 @@ configure_opentelemetry(
 def hello():
 
     # get the current span, created by flask instrumentation
-    current_span = trace.propagation.get_current_span()
+    current_span = trace.get_current_span()
 
     # add more attributes to the server span
     current_span.set_attribute("http.route", "some_route")
